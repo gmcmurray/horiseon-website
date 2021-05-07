@@ -8,58 +8,57 @@ body {
     background-color: #d9dcd6;
 }
 
-header {
-    /* padding: 15px; */
+.header {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px; 
+    align-items: stretch;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    display: inline-flex;
-    padding: 20px;
-    margin: 0px;
-    width: 100%;
-    justify-content: space-between;
 }
 
- .header h1 { 
- font-size: 48px; 
- width: 100px;
- } 
-
-ul#inlinetable li {
-    display:inline;
-    padding: 10px;
-    font-size: 20px;
-    }
-
-/* .hyperlinks { display: table;} */
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
 
 .header h1 .seo {
     color: #d9dcd6;
 }
-
-.header div {
+/*
+.header div { 
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    display: inline;
-    justify-content: space-between;
-    width: 100%;
+}
+*/
+.header #hyperlinks {
+    display:flex;
+    justify-content: space-between; 
+    float: right;
+    height: 100%;
+    width: 800px;
+    align-items: flex-end;
+}
+#inlinetable {
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    margin-left:100px;
 }
 
-.header div ul {
-    list-style-type: none;
+#inlinetable li {
+    list-style: none;
+    flex-basis: auto;
+    display: list-item;
+    margin-right:20px;
+    margin-left:10px;
+    margin-top: 20px;
 }
-
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-nav{
-    margin:20px;
-}
-
 
 a {
     color: #ffffff;
@@ -89,6 +88,12 @@ p {
     margin-left: 25px;
 }
 
+* img {
+    width:auto;
+    height:auto;
+}
+
+
 .content {
     width: 75%;
     display: inline-block;
@@ -106,49 +111,19 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-item {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-item h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+.benefit-item img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -184,12 +159,24 @@ p {
 .search-engine-optimization img {
     max-height: 200px;
 }
+.service{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
 
 .online-reputation-management img {
     max-height: 200px;
 }
 
 .social-media-marketing img {
+    max-height: 200px;
+}
+.service img{
     max-height: 200px;
 }
 
@@ -204,6 +191,10 @@ p {
 }
 
 .social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.service h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
