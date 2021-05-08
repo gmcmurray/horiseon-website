@@ -1,5 +1,8 @@
-# horiseon-website
+# Horiseon-Website
 Optimizing web page through CSS/HTML code to make more accesible
+
+# Working Files
+HTML,CSS Files: https://github.com/gmcmurray/horiseon-website
 
 Deployed Application: https://gmcmurray.github.io/horiseon-website/
 
@@ -17,4 +20,6 @@ Optimization included combining classes to reduce number while providing same fu
 Accesibility was improved by adding alt tags for all images.
 
 ## Screen Shot
+Screen shot with width of 1000 pixels
+
 ![Example of an unfinished wireframe with its row and columns highlighted.](./assets/Images/screenshot.png)
