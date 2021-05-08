@@ -41,14 +41,15 @@ sub-elements, inline table is used to order the hyperlinks which are horizontal 
     display: flex;
     justify-content:space-between;
     align-items: stretch;
-    margin-left:100px;
+    margin: 5px 10px 0 100px;
 }
 
 #inlinetable li {
     list-style: none; /*eliminates bullets */
-    margin-right:20px;
+    margin-right:10px;
     margin-left:10px;
     margin-top: 20px;
+    font-size: 15px;
 }
 
 a {
@@ -88,16 +89,17 @@ p {
 /* Content section - styling allows aside block of benefits to appear to right
 through width = 75% and display: inline-block*/
 .content {
-    width: 75%;
+    width: 74%;
     display: inline-block;
     margin-left: 20px;
+    margin-right: 10px;
     font-size:16px;
 }
 /* Benefits section on left, beside content as float set to right, tagged as an aside in html as is to side of
 content and supports/describes it */
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding: 10px;
     clear: both;
     float: right; 
     width: 20%;
