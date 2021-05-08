@@ -19,22 +19,20 @@ sub-elements, inline table is used to order the hyperlinks which are horizontal 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    flex-wrap:nowrap;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* span styling for letters 'seo' inside Horiseon  found in h1 */
 .header h1 .seo {
     color: #d9dcd6;
 }
-
+/* hyperlinks is flex container for hyperlink table - inlinetable and child of header  */
 .header #hyperlinks {
     display:flex;
     justify-content: space-between; 
-    float: right;
     height: 100%;
     width: 800px;
     align-items: flex-end;
@@ -47,9 +45,7 @@ sub-elements, inline table is used to order the hyperlinks which are horizontal 
 }
 
 #inlinetable li {
-    list-style: none;
-    flex-basis: auto;
-    display: list-item;
+    list-style: none; /*eliminates bullets */
     margin-right:20px;
     margin-left:10px;
     margin-top: 20px;
@@ -73,30 +69,31 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* class that floats boxes to left of page */
 .float-left {
     float: left;
     margin-right: 25px;
 }
-
+/* class that floats boxes to right of page */
 .float-right {
     float: right;
     margin-left: 25px;
 }
-
+/* default img settings for imgs not in a class or unique id */
 * img {
     width:auto;
     height:auto;
-}
+} 
 
-/* Content section */
+/* Content section - styling allows aside block of benefits to appear to right
+through width = 75% and display: inline-block*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
     font-size:16px;
 }
-/* Benefits section on left, beside content as it is inline block , tagged as an aside in html as is to side of
+/* Benefits section on left, beside content as float set to right, tagged as an aside in html as is to side of
 content and supports/describes it */
 .benefits {
     margin-right: 20px;
@@ -111,7 +108,7 @@ content and supports/describes it */
    
 }
 
-/* style class for three benefits described in content */
+/* common style class for three benefits described in content */
 .benefit-item {
     margin-bottom: 32px;
     color: #ffffff;
@@ -127,7 +124,7 @@ content and supports/describes it */
     margin: 10px auto;
     max-width: 150px;
 }
-
+/* common style class for three service/products in content */
 .service {
     margin-bottom: 20px;
     padding: 50px;
@@ -137,6 +134,7 @@ content and supports/describes it */
     color: #ffffff;
 }
 
+/* common image style for items in content */
  #search-engine-optimization img,#online-reputation-management img,#social-media-marketing img
  {
     max-height: 200px;
